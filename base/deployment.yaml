@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name:  furious
+    labels:
+     app: harshapp
+spec:
+   replicas: 2
+   selector:
+     matchLabels:
+        app: harshapp
+ 
+   template:
+      metadata:
+           name:  furious
+           labels:
+              app: harshapp
+
+      spec:
+         containers:
+           -  name: fasttrack
+              image: nginxdemos/hello:0.3
+              imagePullPolicy: Always
+              ports:
+                  - containerPort: 80
