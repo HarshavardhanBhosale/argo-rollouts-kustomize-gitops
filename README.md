@@ -7,12 +7,11 @@ This project demonstrates a production-style Canary Deployment strategy on Kuber
 The project follows GitOps principles by managing Kubernetes manifests through Kustomize overlays, making deployments reusable, maintainable, and environment-specific.
 
 ---
-## Live Demonstration
+## Architecture Demo
 
-<p align="center">
-  <img src="screenshots/modern-argo-rollouts-animation.gif" alt="Canary Deployment Demo" width="100%">
-</p>
+![Architecture Demo](./Screenshots/modern-argo-rollouts-animation(1).gif)
 
+modern-argo-rollouts-animation(1).gif
 ---
 ## Key Features
 
