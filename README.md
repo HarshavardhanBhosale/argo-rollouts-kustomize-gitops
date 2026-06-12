@@ -112,15 +112,7 @@ Integrated NGINX Ingress Controller with Argo Rollouts to dynamically split traf
 * Achieved zero-downtime deployment process
 * Implemented GitOps-ready Kubernetes manifest structure
 * Demonstrated production-grade release strategy
-
----
-
-## Screenshots
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Argo Rollouts](https://img.shields.io/badge/Argo%20Rollouts-EF7B4D?style=for-the-badge)
-![Kustomize](https://img.shields.io/badge/Kustomize-000000?style=for-the-badge)
-![NGINX](https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white)
-
+  
 ---
 
 ## Skills Demonstrated
@@ -156,4 +148,10 @@ DevOps & Cloud Engineer
 
 This project is available for learning, demonstration, and portfolio purposes.
 
+---
+
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Argo Rollouts](https://img.shields.io/badge/Argo%20Rollouts-EF7B4D?style=for-the-badge)
+![Kustomize](https://img.shields.io/badge/Kustomize-000000?style=for-the-badge)
+![NGINX](https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white)
 
