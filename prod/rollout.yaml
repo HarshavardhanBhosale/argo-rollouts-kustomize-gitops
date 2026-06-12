@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: furious
+spec:
+  strategy:
+    canary:
+      canaryService: preview-svc
+      stableService: furiosservice 
+      trafficRouting:
+        nginx:
+          stableIngress: harsh-ingress
+      steps:
+        - setWeight: 20
+        - pause:
+            duration: 10s
+        - setWeight: 40
+        - pause:
+            duration: 10s
+        - setWeight: 60
+        - pause:
+            duration: 10s
+        - setWeight: 80
+        - pause:
+            duration: 10s
+        - setWeight: 100
+

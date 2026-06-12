@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: harsh-ingress
+  namespace: prod
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: www.harsh.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: furiosservice
+            port:
+              number: 30200
