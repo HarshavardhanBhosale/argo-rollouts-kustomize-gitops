@@ -8,7 +8,9 @@ commonAnnotations:
 labels:
 - includeSelectors: false
   pairs:
-    project: instavote
+    project: furious
 patches:
 - path: service.yaml
 - path: preview-service.yaml
+- path: rollout.yaml
+

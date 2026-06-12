@@ -1,25 +1,23 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
-    name:  furious
-    labels:
-     app: harshapp
+  name: furious
+  labels:
+    app: harshapp
 spec:
-   replicas: 5
-   selector:
-     matchLabels:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: harshapp
+  template:
+    metadata:
+      labels:
         app: harshapp
- 
-   template:
-      metadata:
-           name:  furious
-           labels:
-              app: harshapp
+    spec:
+      containers:
+        - name: fasttrack
+          image: nginxdemos/hello:0.3
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
 
-      spec:
-         containers:
-           -  name: fasttrack
-              image: nginxdemos/hello:0.3
-              imagePullPolicy: Always
-              ports:
-                  - containerPort: 80
